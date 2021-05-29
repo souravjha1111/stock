@@ -16,6 +16,9 @@ import pickle
 
 trend = "stable"
 test_data=[]
+from django.views.decorators.csrf import csrf_exempt
+
+@csrf_exempt
 def titanic(request):
     if request.method == 'POST':
         form = TitanicForm(request.POST)
