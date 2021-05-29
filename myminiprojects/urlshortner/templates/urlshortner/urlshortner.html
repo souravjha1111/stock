@@ -1,0 +1,11 @@
+{% extends "myapp/base.html" %}
+{% block content %}
+
+<div>
+    <form method='POST' action='.'>
+        {% csrf_token %}
+        {{form.as_p}}
+        <input style="margin-left: 150px;"  type="submit" value="Shorten">
+    </form>
+</div>
+{% endblock content %}
