@@ -129,3 +129,4 @@ EMAIL_HOST_PASSWORD =os.environ.get('EMAIL_PASS')
 
 
 django_heroku.settings(locals())
+X_FRAME_OPTIONS = 'ALLOW-FROM 
